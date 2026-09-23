@@ -12,23 +12,23 @@ O foco principal foi criar uma interface que não seja apenas bonita, mas també
 
 ### ✨ Principais Funcionalidades
 
-* **🎨 Design Moderno (Glassmorphism):** Interface com efeito de vidro translúcido (`backdrop-filter`), sombras suaves e bordas destacadas.
-* **🌌 Fundo Dinâmico e Animado:** Um gradiente de fundo que se move suavemente, combinado com orbes flutuantes para criar uma sensação de profundidade.
-* **🖱️ Efeito de Inclinação 3D Interativo:** O contêiner principal inclina-se sutilmente com base na posição do cursor, adicionando uma camada extra de interatividade.
-* **💨 Animações Suaves:** Elementos da página aparecem com animações de fade-in escalonadas, e os links possuem transições suaves em estados de hover, focus e active.
-* **♿ Acessibilidade em Primeiro Lugar:**
-    * **Suporte a `prefers-reduced-motion`:** Animações e transições são desativadas se o usuário preferir.
-    * **Navegação por Teclado:** Totalmente navegável usando as teclas Tab e Enter/Espaço.
-    * **Leitores de Tela:** Uso correto de atributos ARIA (`role`, `aria-label`, `aria-hidden`) e um anúncio sonoro quando a página é carregada.
-    * **Link "Pular para o Conteúdo":** Facilita a navegação para usuários de teclado.
-* **📱 Totalmente Responsivo:** O layout se adapta perfeitamente a dispositivos móveis, tablets e desktops.
-* **⚙️ Leve e Rápido:** Construído sem frameworks ou dependências, apenas HTML, CSS e JavaScript puros.
+- **🎨 Design Moderno (Glassmorphism):** Interface com efeito de vidro translúcido (`backdrop-filter`), sombras suaves e bordas destacadas.
+- **🌌 Fundo Dinâmico e Animado:** Um gradiente de fundo que se move suavemente, combinado com orbes flutuantes para criar uma sensação de profundidade.
+- **🖱️ Efeito de Inclinação 3D Interativo:** O contêiner principal inclina-se sutilmente com base na posição do cursor, adicionando uma camada extra de interatividade.
+- **💨 Animações Suaves:** Elementos da página aparecem com animações de fade-in escalonadas, e os links possuem transições suaves em estados de hover, focus e active.
+- **♿ Acessibilidade em Primeiro Lugar:**
+  - **Suporte a `prefers-reduced-motion`:** Animações e transições são desativadas se o usuário preferir.
+  - **Navegação por Teclado:** Totalmente navegável usando as teclas Tab e Enter/Espaço.
+  - **Leitores de Tela:** Uso correto de atributos ARIA (`role`, `aria-label`, `aria-hidden`) e um anúncio sonoro quando a página é carregada.
+  - **Link "Pular para o Conteúdo":** Facilita a navegação para usuários de teclado.
+- **📱 Totalmente Responsivo:** O layout se adapta perfeitamente a dispositivos móveis, tablets e desktops.
+- **⚙️ Leve e Rápido:** Construído sem frameworks ou dependências, apenas HTML, CSS e JavaScript puros.
 
 ### 🛠️ Construído Com
 
-* ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-* ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ---
 
@@ -37,11 +37,13 @@ O foco principal foi criar uma interface que não seja apenas bonita, mas també
 É muito simples configurar sua própria página de links com o Linktwig.
 
 **1. Clone o repositório:**
+
 ```bash
 git clone https://github.com/victorbrayner/linktwig.git
 ```
 
 **2. Navegue até o diretório do projeto:**
+
 ```bash
 cd linktwig
 ```
@@ -50,17 +52,17 @@ cd linktwig
 
 Abra o arquivo `index.html` e edite as seguintes seções:
 
-* **Informações do Perfil:**
-    * Altere a `src` da tag `<img>` com a classe `profile-image` para a sua foto.
-    * Modifique o texto dentro de `h1.profile-name` para o seu nome.
-    * Atualize o `p.profile-bio` com sua biografia ou título.
-* **Links Principais:**
-    * Edite os elementos `<a>` dentro da `nav.links-container`.
-    * Mude o `href` para a sua URL, o texto do link e o `aria-label` para uma descrição acessível.
-    * Você pode trocar o ícone substituindo o `<svg class="link-icon">` por outro SVG inline (os ícones atuais vêm do Font Awesome Free, licença CC BY 4.0).
-    * Mantenha `target="_blank"` e `rel="noopener noreferrer"` nos links que abrem em nova aba.
-* **Redes Sociais:**
-    * Atualize os links `<a>` dentro do `footer.social-links` com as URLs dos seus perfis.
+- **Informações do Perfil:**
+  - Altere a `src` da tag `<img>` com a classe `profile-image` para a sua foto.
+  - Modifique o texto dentro de `h1.profile-name` para o seu nome.
+  - Atualize o `p.profile-bio` com sua biografia ou título.
+- **Links Principais:**
+  - Edite os elementos `<a>` dentro da `nav.links-container`.
+  - Mude o `href` para a sua URL, o texto do link e o `aria-label` para uma descrição acessível.
+  - Você pode trocar o ícone substituindo o `<svg class="link-icon">` por outro SVG inline (os ícones atuais vêm do Font Awesome Free, licença CC BY 4.0).
+  - Mantenha `target="_blank"` e `rel="noopener noreferrer"` nos links que abrem em nova aba.
+- **Redes Sociais:**
+  - Atualize os links `<a>` dentro do `footer.social-links` com as URLs dos seus perfis.
 
 **4. Abra no navegador:**
 
@@ -76,7 +78,7 @@ Exemplo de uso (pode ser adicionado no final do script ou em um console):
 
 ```javascript
 // addLink(texto, url, posicao);
-addLink("Meu Novo Blog", "https://meublog.com", 2); // Adiciona na 3ª posição
+addLink("Meu Novo Blog", "https://meublog.com", 2) // Adiciona na 3ª posição
 ```
 
 ---
