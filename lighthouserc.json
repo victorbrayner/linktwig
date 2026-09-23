@@ -4,7 +4,6 @@
       "staticDistDir": ".",
       "numberOfRuns": 1,
       "chromeFlags": [
-        "--headless=new",
         "--no-sandbox",
         "--disable-dev-shm-usage",
         "--disable-gpu",

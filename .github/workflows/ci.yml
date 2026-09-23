@@ -27,4 +27,6 @@ jobs:
         with:
           node-version: 22
       - run: npm ci
-      - run: npm run lhci
+      - name: Instala xvfb (Chrome headful sem display no runner)
+        run: sudo apt-get update && sudo apt-get install -y xvfb
+      - run: xvfb-run --auto-servernum npm run lhci
