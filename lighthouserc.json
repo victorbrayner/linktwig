@@ -3,7 +3,13 @@
     "collect": {
       "staticDistDir": ".",
       "numberOfRuns": 1,
-      "chromeFlags": ["--headless=new", "--disable-extensions"]
+      "chromeFlags": [
+        "--headless=new",
+        "--no-sandbox",
+        "--disable-dev-shm-usage",
+        "--disable-gpu",
+        "--disable-extensions"
+      ]
     },
     "assert": {
       "assertions": {
