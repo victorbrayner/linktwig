@@ -38,7 +38,7 @@ O foco principal foi criar uma interface que não seja apenas bonita, mas també
 
 **1. Clone o repositório:**
 ```bash
-git clone [https://github.com/seu-usuario/linktwig.git](https://github.com/seu-usuario/linktwig.git)
+git clone https://github.com/victorbrayner/linktwig.git
 ```
 
 **2. Navegue até o diretório do projeto:**
@@ -57,7 +57,8 @@ Abra o arquivo `index.html` e edite as seguintes seções:
 * **Links Principais:**
     * Edite os elementos `<a>` dentro da `nav.links-container`.
     * Mude o `href` para a sua URL, o texto do link e o `aria-label` para uma descrição acessível.
-    * Você pode mudar o ícone alterando a classe no elemento `<i>` (utiliza Font Awesome).
+    * Você pode trocar o ícone substituindo o `<svg class="link-icon">` por outro SVG inline (os ícones atuais vêm do Font Awesome Free, licença CC BY 4.0).
+    * Mantenha `target="_blank"` e `rel="noopener noreferrer"` nos links que abrem em nova aba.
 * **Redes Sociais:**
     * Atualize os links `<a>` dentro do `footer.social-links` com as URLs dos seus perfis.
 
@@ -74,8 +75,8 @@ O arquivo `script.js` inclui uma função global `addLink()` para adicionar novo
 Exemplo de uso (pode ser adicionado no final do script ou em um console):
 
 ```javascript
-// addLink(texto, url, classe_do_icone, posicao);
-addLink("Meu Novo Blog", "[https://meublog.com](https://meublog.com)", "fas fa-blog", 2); // Adiciona na 3ª posição
+// addLink(texto, url, posicao);
+addLink("Meu Novo Blog", "https://meublog.com", 2); // Adiciona na 3ª posição
 ```
 
 ---
